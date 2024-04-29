@@ -10,8 +10,8 @@
 #include <vector>
 
 #include "common_lib.h"
-#include "sophus/so3.h"
-
+// #include "sophus/so3.h"
+#include "sophus/so3.hpp"
 //该hpp主要包含：状态变量x，输入量u的定义，以及正向传播中相关矩阵的函数
 
 // 24维的状态量x

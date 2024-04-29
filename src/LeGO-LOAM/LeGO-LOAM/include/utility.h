@@ -9,8 +9,8 @@
 
 #include "cloud_msgs/cloud_info.h"
 
-#include <opencv/cv.h>
-
+// #include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 #include <pcl/common/common.h>
 #include <pcl/filters/filter.h>
 #include <pcl/filters/voxel_grid.h>

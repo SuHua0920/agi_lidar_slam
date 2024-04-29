@@ -199,8 +199,9 @@ bool TryMAPInitialization() {
   para_quat[2] = 0;
   para_quat[3] = 0;
 
-  ceres::LocalParameterization* quatParam =
-      new ceres::QuaternionParameterization();
+  // ceres::LocalParameterization* quatParam =
+  //     new ceres::QuaternionParameterization();
+  ceres::Manifold *quatParam = new ceres::EigenQuaternionManifold();
   ceres::Problem problem_quat;
 
   problem_quat.AddParameterBlock(para_quat, 4, quatParam);
